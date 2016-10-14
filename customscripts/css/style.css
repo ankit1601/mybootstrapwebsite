@@ -1,0 +1,298 @@
+body{
+	-webkit-font-smoothing:antaliased;
+	text-rendering:optimizeLegibility;
+	background-color: rgba(211, 211, 211, 0.16);
+	background: url('../../../images/backgrounds/background.jpg') no-repeat;
+	background-size: cover;
+}
+/*Navbar custom styles starts here*/
+#navColor{
+	background:#333 ;
+	font-color: white;
+}
+nav ul li a{
+	color: white;
+}
+#logoImageSize{
+	margin-bottom: 30px;
+	width: 70px;
+	height: 50px;
+}
+.navbar-brand{
+	padding:13px 15px;
+}
+#navColor .icon-bar{
+	background: white;
+}
+#searchOption{
+	width: 200px;
+	float: left;
+}
+
+@media (max-width: 768px) {
+    #dropDownColor li a{
+			color: white;
+		}
+	#temp{
+		width: 100%
+	}
+}
+/*Navbar custom styles
+
+/*Carousel custom styles starts here*/
+#myCarousel{
+	margin-top: 40px;
+}
+#myCarousel .item{
+	height: 300px;
+}
+#slide2{
+	background:url('../../../images/carousel/carousel1smallest.jpg') top center no-repeat;
+}
+#slide3{
+	background:url('../../../images/carousel/carousel2smallest.jpg') top center no-repeat;
+}
+#slide4{
+	background:url('../../../images/carousel/carousel3smallest.jpg') top center no-repeat;
+}
+#slide5{
+	background:url('../../../images/carousel/carousel4smallest.jpg') top center no-repeat;
+}
+.slideImageSize{
+	width: 100%;
+}
+/*Media Quaries*/
+/*Portrait & Landscape phone*/
+@media(min-width:480px) {
+#myCarousel .item{
+		height: 364px;
+		/*max-width: 100%*/
+	}
+	#slide2{
+		background:url('../../../images/carousel/carousel1small.jpg') top center no-repeat;
+	}
+	#slide3{
+		background:url('../../../images/carousel/carousel2small.jpg') top center no-repeat;
+	}
+	#slide4{
+		background:url('../../../images/carousel/carousel3small.jpg') top center no-repeat;
+	}
+	#slide5{
+		background:url('../../../images/carousel/carousel4small.jpg') top center no-repeat;
+	}
+}
+/*Landscape phone to portrait tablet*/
+@media(min-width:768px) {
+#myCarousel .item{
+		height: 486px;
+		/*max-width: 100%*/
+	}
+	#slide2{
+		background:url('../../../images/carousel/carousel1medium.jpg') top center no-repeat;
+	}
+	#slide3{
+		background:url('../../../images/carousel/carousel2medium.jpg') top center no-repeat;
+	}
+	#slide4{
+		background:url('../../../images/carousel/carousel3medium.jpg') top center no-repeat;
+	}
+	#slide5{
+		background:url('../../../images/carousel/carousel4medium.jpg') top center no-repeat;
+	}
+	/*this on design page*/
+#myCarousel2 {
+	display: none;
+	}
+}
+/*Landscape phone to portrait tablet*/
+@media(min-width:1024px) {
+#myCarousel .item{
+		height: 556px;
+		/*max-width: 100%*/
+	}
+	#slide2{
+		background:url('../../../images/carousel/carousel1large.jpg') top center no-repeat;
+	}
+	#slide3{
+		background:url('../../../images/carousel/carousel2large.jpg') top center no-repeat;
+	}
+	#slide4{
+		background:url('../../../images/carousel/carousel3large.jpg') top center no-repeat;
+	}
+	#slide5{
+		background:url('../../../images/carousel/carousel4large.jpg') top center no-repeat;
+	}
+}
+/*Large Desktop*/
+@media(min-width:1200px) {
+	#myCarousel .item{
+		height: 740px;
+		/*max-width: 100%*/
+	}
+	#slide2{
+		background:url('../../../images/carousel/carousel1.jpg') top center no-repeat;
+	}
+	#slide3{
+		background:url('../../../images/carousel/carousel2.jpg') top center no-repeat;
+	}
+	#slide4{
+		background:url('../../../images/carousel/carousel3.jpg') top center no-repeat;
+	}
+	#slide5{
+		background:url('../../../images/carousel/carousel4.jpg') top center no-repeat;
+	}
+}
+/*Carousel custom styles ends here*/
+/*Know More section starts her*/
+.well{
+	/*Default margin of well is 0 at top and bottom*/
+	margin:20px 0;
+}
+.well .page-header{
+	/*it will remove default margin of page header*/
+	margin-top:0;
+}
+.well .page-header h1{
+	/*this will remove default heading of h1 in page header*/
+	margin-top:0;
+}
+#moreAboutUs{
+	text-align: justify;
+}
+
+#features{
+	text-align: center;
+	vertical-align: middle;
+}
+#features img{
+	margin:0 0 20px;
+}
+.panelMargin{
+	margin:15px 0;
+}
+.featuresTextAlign{
+	text-align: justify;
+}
+.alert{
+	margin-top: 20px;
+	display: none;
+}
+#message{
+	margin-bottom:15px;
+}
+
+/*Know more section ends here*/
+
+/*Tabs content css start here*/
+.tabbable img.thumbnail{
+	margin: 0 20px 10px 0;
+}
+#tab3 iframe{
+	width: 100%;
+	height: 340px;
+}
+
+/*Tabs content css ends here*/
+/*offers section script starts here*/
+.thumnails{
+	margin:20px 0;
+}
+#offers .thumbnail img{
+	margin: 0 20px 10px 0;
+}
+.thumbnail .price{
+		font-size: 20px;
+		position: absolute;
+		top:40px;
+		right:0px;
+		padding:10px;
+}
+.thumbnail .price .sup{
+	font-weight: normal;
+}
+
+/*.thumbnailmargin{
+	margin:10px;
+}*/
+/*offers section script ends here*/
+@media (max-width:480px ) {
+	.thumbnail .price{
+		font-size: 10px;
+	}
+	.thumbnail .price .sup{
+	font-size: 10px;
+}
+}
+/*footer custom styles goes here*/
+footer{
+	background: #333;
+	color: #eee;
+	font-size: 11px;
+	padding: 20px;
+}
+ul.unstyled{
+	list-style: none;
+	padding: 0;
+	text-decoration:none;
+}
+ul.unstyled li a{
+	color: white;
+}
+/*footer custom styles ends here*/
+/*common files*/
+.textAlign{
+	text-align: justify;
+}
+.textColor{
+	color: white;
+}
+
+/*Code for parallax effect*/
+html{
+	overflow: hidden;
+}
+
+body{
+	height: 100vh;
+	overflow-y:auto;
+	overflow-x: hidden;
+	-webkit-overflow-scrolling:touch;
+	-webkit-perspective:1px;
+	perspective: 1px;
+
+}
+
+.parallax{
+	-webkit-transform-style:preserve-3d;
+	transform-style: preserve-3d;
+}
+/*
+.back{
+	-webkit-transform-style:translateZ(-1px) scale(2);
+	transform:translateZ(-1px) scale(2);
+}
+.front{
+	position: relative;
+	z-index: 2;
+}
+/*Design page effects*/
+#designs{
+	text-align: center;
+	margin-top: 120px;
+}
+#videoSize iframe{
+	width: 100%;
+	height: 300px;
+}
+#myCarousel2{
+	margin-top:120px;
+	text-align: center;
+}
+#myCarousel2 .carousel-indicators{
+	margin-bottom: 40px;
+}
+@media (max-width: 767px) {
+	#designs{
+		display: none;
+	}
+}
