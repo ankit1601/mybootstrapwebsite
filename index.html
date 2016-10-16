@@ -1,16 +1,15 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-	<!-- <meta charset="utf-8"> -->
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Designs Your Cars</title>
 
 	<!-- Bootstrap css added here -->
-	<link  href="bootstrap/css/bootstrap.min.css">
-	<!-- <link  href="bootstrap/css/bootstrap-glyphicons.css"> -->
-	<!-- <link  href="bootstrap/css/bootstrap-theme.css"> -->
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
 	<!-- custom css added here -->
-	<link type="text/css" href="customscripts/css/style.css">
+	<link rel="stylesheet" type="text/css" href="customscripts/css/style.css">
 
 	<!-- Java Script code-->
 	<script src="bootstrap/js/jquery-1.8.2.min.js"></script>
@@ -32,7 +31,7 @@
 				</div>
 				<div class="collapse navbar-collapse" id="navbarcollapse">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">HOME</a></li>
+						<li class="active"><a href="/">HOME</a></li>
 						<li><a href="#">ABOUT</a></li>
 						<li><a href="#">SERVICES</a></li>
 						<li><a href="markup/design.html">DESIGNS</a></li>
@@ -41,7 +40,7 @@
 						<input type="text" class="form-control" placeholder="search" id="searchOption"/>
 						<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
 					</form>
-					<ul class="nav navbar-nav pull-right" id="temp">
+					<ul class="nav navbar-nav pull-right" id="myProfile">
 						<li class="dropdown">
 							<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span>MY PROFILE<strong class="caret"></strong></a>
 							<ul class="dropdown-menu" id="dropDownColor">
@@ -49,7 +48,7 @@
 								<li><a href="#">Delete</a></li>
 								<li class="divider"></li>
 								<li><a href="#"><span class="glyphicon glyphicon-wrench"></span>Setting</a></li>
-								<li><a href="#"><span class="glyphicon glyphicon-wrench"></span>Logout</a></li>
+								<li><a href="#"><span class="glyphicon glyphicon-off"></span>Logout</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -60,7 +59,7 @@
 	</header>
 	
 
-		<div class="carousel slide container-fluid" id="myCarousel">
+		<div class="carousel slide" id="myCarousel">
 						<ol class="carousel-indicators">
 							<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
 							<li data-slide-to="1" data-target="#myCarousel"></li>
@@ -69,34 +68,31 @@
 							<!-- carousel indicator ends here -->
 						</ol>
 						<!-- Wrapper for carousel -->
-						<div class="carousel-inner">
+						<div class="carousel-inner" role="listbox">
 							<div class="item active" id="slide2">
-								<!-- <img src="images/modified7.jpg" alt="image not active" class="slideImageSize" /> -->
 								<div class="carousel-caption">
-									<!-- <h4>That's what we are capable of</h4> -->
+									<h2><strong><em>Your</em></strong></h2>
 									<!-- carousel caption ends here -->
 								</div>
 								<!-- item ends here -->
 							</div>
 							<div class="item" id="slide3">
 								<div class="carousel-caption">
-									<!-- <h4>Here are few modified cars</h4> -->
+									<h2><strong><em>Need!!!</em></strong></h2>
 									<!-- carousel caption ends here -->
 								</div>
 								<!-- item ends here -->
 							</div>
 							<div class="item" id="slide4">
-								<!-- <img src="images/modified4.jpg" alt="image not active" class="slideImageSize"  /> -->
 								<div class="carousel-caption">
-									<!-- <h4>Here are few modified cars</h4> -->
+									<h2><strong><em>Our</em></strong></h2>
 									<!-- carousel caption ends here -->
 								</div>
 								<!-- item ends here -->
 							</div>
 							<div class="item" id="slide5">
-								<!-- <img src="images/modified5.jpg" alt="image not active" class="slideImageSize"  /> -->
 								<div class="carousel-caption">
-									<!-- <h4>Here are few modified cars</h4> -->
+									<h2><strong><em>Care</em></strong></h2>
 									<!-- carousel caption ends here -->
 								</div>
 								<!-- item ends here -->
@@ -114,132 +110,132 @@
 
 		<div class="container">
 			<div class="row" id="moreAboutUs">
-				<div class="col-sm-12">
+				<div class="col-lg-12">
 					<div class="alert alert-info alert-dismissible" role="alert" id="successAlert">
 						<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 						<strong>Warning!</strong> Better check yourself, you're not looking too good.
 					</div>
 					<!-- visible only on small devices -->
 					<div class="well well-small visible-xs"> <a href="" class="btn btn-large btn-block btn-default"><span class="glyphicon glyphicon-phone"></span>give us a call</a> </div><!--well-small ends here -->
-					<div class="well well-sm">
+					<div class="well well-sm" id="knowMore">
 						<div class="page-header">
-							<h1>What you can do here<small>...read and follow</small></h1>
-							<p class="lead">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi velit inventore sit aliquam eum debitis hic consequatur vitae ullam laudantium et vero, voluptates praesentium atque recusandae ea nulla voluptate optio!
-							</p>
-							<a href="#myModal" role="button" class="btn btn-primary hidden-xs" data-toggle='modal'> <span class="glypicon glypicon-hand-up"></span> Click here to Register</a>
-							<a href="" class="btn btn-large btn-link hidden-xs">give us some feedback</a>
-
-							<div class="modal fade" id="myModal">
-								<div class="modal-dialog">
-									<div class="modal-content">
-										<div class="modal-header">
-											<button class="close" data-dismiss="modal">&times;</button>
-											<h4 class="modal-title">Register Here</h4>
-											<!-- header ends here -->
-										</div>
-										<div class="modal-body">
-											<h4>Text in Form</h4>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae eius delectus, inventore ad omnis. Reiciendis architecto sed quidem, culpa tenetur repellendus sunt exercitationem sint maiores ut consequatur mollitia, nostrum nihil!</p>
-											<h4>popovers in the model</h4>
-											<a href="#" class="btn btn-danger pop" data-toggle="pop">Don't click this</a>
-											<p class="text-muted">registration is free</p>
-				
-												<form class="form-horizontal">
-												  <div class="form-group">
-												    <label for="name" class="col-sm-2 control-label">Name</label>
-												    <div class="col-sm-10">
-												      	<input type="text" class="form-control" id="name" placeholder="Name">
-												    </div>
-												  </div>
-												  <div class="form-group">
-												    <label for="email" class="col-sm-2 control-label">Email</label>
-												    <div class="col-sm-10">
-												      	<input type="email" class="form-control" id="email" placeholder="Email">
-												    </div>
-												  </div>
-												  <div class="form-group">
-												    <label for="message" class="col-sm-2 control-label">Message</label>
-												    <div class="col-sm-10">
-												      	<textarea class="form-control" id="message" placeholder="Message" rows="3"></textarea>
-												      	<button class="btn btn-success pull-right" type="submit">register</button>
-												    </div>
-												  </div>
-												<!-- form ends here -->
-											</form>
-											<!-- modal body ends here -->
-										</div>
-										<div class="modal-footer">
-												<button class="btn btn-default" data-dismiss="modal" type="button">close</button>
-												<button class="btn btn-primary" type="button">save</button>
-												<!-- modal footer ends here -->
-										</div>
-										<!-- modal-content ends here -->
-									</div>
-									<!-- modal-dialoge ends here -->
-								</div>
-								<!-- My Modal ends here -->
-							</div>
+							<h1 class="textColor">What you can do here<small>...read and follow</small></h1>
 						</div><!-- pageheader ends here -->
+						<p class="lead  textColor">
+							You can first register here to start using our site completely beacuse we do not charge for registration.If you see call option give us a miss call , we will call you back with instructions how to get yourself register.
+
+						</p>
+						<a href="#myModal" role="button" class="btn btn-primary hidden-xs" data-toggle='modal'> <span class="glypicon glypicon-hand-up"></span> Click here to Register</a>
+						<a href="" class="btn btn-large btn-link hidden-xs">give us some feedback</a>
+
+						<div class="modal fade" id="myModal">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title">Register Here</h4>
+										<!-- header ends here -->
+									</div>
+									<div class="modal-body">
+										<h4>Instructions:</h4>
+										<p>Please fill the form below and you are one click away from registration and believe we do not share any information with third parties...</p>
+										<a href="#" class="btn btn-danger pop" data-toggle="pop">Don't Click Here</a>
+										<p class="text-muted">registration is free</p>
+			
+											<form class="form-horizontal">
+											  <div class="form-group">
+											    <label for="name" class="col-lg-2 control-label">Name</label>
+											    <div class="col-lg-10">
+											      	<input type="text" class="form-control" id="name" placeholder="Name">
+											    </div>
+											  </div>
+											  <div class="form-group">
+											    <label for="email" class="col-lg-2 control-label">Email</label>
+											    <div class="col-lg-10">
+											      	<input type="email" class="form-control" id="email" placeholder="Email">
+											    </div>
+											  </div>
+											  <div class="form-group">
+											    <label for="message" class="col-lg-2 control-label">Message</label>
+											    <div class="col-lg-10">
+											      	<textarea class="form-control" id="message" placeholder="Message" rows="3"></textarea>
+											      	<button class="btn btn-success pull-right" type="submit">register</button>
+											    </div>
+											  </div>
+											<!-- form ends here -->
+										</form>
+										<!-- modal body ends here -->
+									</div>
+									<div class="modal-footer">
+											<button class="btn btn-default" data-dismiss="modal" type="button">close</button>
+											<button class="btn btn-primary" type="button">save</button>
+											<!-- modal footer ends here -->
+									</div>
+									<!-- modal-content ends here -->
+								</div>
+								<!-- modal-dialoge ends here -->
+							</div>
+							<!-- My Modal ends here -->
+						</div>
 					</div><!-- well ends here -->
 				</div><!-- col-12 ends here -->
 
 			</div><!-- More About Us Ends Here -->
-			<div class="row textColor col-sm-12" id="feturesHeading">
+			<div class="row textColor col-lg-12" id="feturesHeading">
 				<h2>You Should know</h2>
-				<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam animi saepe iste quas accusamus magnam, molestias voluptas suscipit! Id consequatur iste placeat aspernatur pariatur nisi doloremque quo tempore ipsa distinctio.</p>
+				<p class="lead">When you have passion to do things you do it in the best possible way. That's what we do here at DYC.We Bring the change which based on all the cutting edge automotive technology</p>
 			</div>
 
 
 			<div class="row" id="features">
 
-				<section class="col-sm-4 feature">
-					<div class="panel panel-default panel-primary panelMargin">
+				<section class="col-lg-4 feature">
+					<div class="panel panel-default panelMargin panelColor">
 						<div class="panel-heading">
-							<h3 class="panel-title">Heritage</h3>
+							<h3 class="panel-title textColor">Heritage</h3>
 							<!-- panel heading ends here -->
 						</div>
-						<center><img src="../../images/feature/modified1.jpg" class="img-responsive img-circle"/></center>
+						<img src="../../images/feature/modified1.jpg" class="img-responsive img-circle" alt="image not Available"/>
 						<article class="panel-body textAlign">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur voluptate suscipit praesentium consectetur modi delectus tempora fuga voluptatem inventore, quod fugiat deleniti ipsum quo natus nulla perspiciatis dolorem eos reiciendis!
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur voluptate suscipit praesentium consectetur modi delectus tempora fuga voluptatem inventore, quod fugiat deleniti ipsum quo natus nulla perspiciatis dolorem eos reiciendis!
+							It takes a special kind of zeal to follow your vision, but it takes even more courage to close down a successful business to pursue a bigger dream.
+							This journey begins in 1983 when Dilip Chhabria returned to India after spending a year at General Motor’s Design Center in Detroit. Having studied Transportation Design from the prestigious Art Center College of Design in Pasadena, California, his experience in the car mass-production business soon made him realize that his passion lay in developing and designing unique creations. He took the entrepreneurial plunge and started creating automotive accessories for the mass market and he got succeeded beacuse he was passionate.
 						</article>
-						<button class="btn btn-warning btn-block">Read More</button>
+						<button class="btn btn-info btn-block">Read More</button>
 					</div>
 				</section>
-				<section class="col-sm-4 feature">
-					<div class="panel panel-default panel-info panelMargin">
+				<section class="col-lg-4 feature">
+					<div class="panel panel-default panelMargin panelColor">
 						<div class="panel-heading ">
-							<h3 class="panel-title">The Artist</h3>
+							<h3 class="panel-title textColor">The Engineer</h3>
 							<!-- panel heading ends here -->
 						</div>
-						<center><img src="../../images/feature/carArtist.jpg" class="img-circle img-responsive" /></center>
+						<img src="../../images/feature/carArtist.jpg" class="img-circle img-responsive" alt="image not Available">
 						<article class="panel-body textAlign">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur voluptate suscipit praesentium consectetur modi delectus tempora fuga voluptatem inventore, quod fugiat deleniti ipsum quo natus nulla perspiciatis dolorem eos reiciendis!
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur voluptate suscipit praesentium consectetur modi delectus tempora fuga voluptatem inventore, quod fugiat deleniti ipsum quo natus nulla perspiciatis dolorem eos reiciendis!
+							It is said that if you love what you do for a living then you will never see it as ‘just a job’. By that maxim Dilip Chhabria has possibly never ever worked a day in his life. For him the business of car design and modification is an amalgamation of his passion, hobby and work.
+							In DC we see the marriage of an artist’s sensibilities and an engineer’s mind. He infuses each of his projects with an aesthetic awareness while simultaneously pushing the machine’s capabilities to a new level. Every DC creation is a signature extension of the artist’s personality and while never two of his products are the same, they are instantly recognizable as having made by the same master.
 						</article>
-						<button class="btn btn-warning btn-block">Read More</button>
+						<button class="btn btn-info btn-block">Read More</button>
 					</div>
 				</section>
-				<div class="col-sm-4 feature">
-					<div class="panel panel-default panel-info panelMargin">
+				<div class="col-lg-4 feature">
+					<div class="panel panel-default panelMargin panelColor">
 						<div class="panel-heading ">
-							<h3 class="panel-title">History</h3>
+							<h3 class="panel-title textColor">History</h3>
 							<!-- panel heading ends here -->
 						</div>
-						<center><img src="../../images/feature/history.jpg" class="img-circle img-responsive"/></center>
+						<img src="../../images/feature/history.jpg" class="img-circle img-responsive" alt="image not Available"/>
 						<div class="panel-body textAlign">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur voluptate suscipit praesentium consectetur modi delectus tempora fuga voluptatem inventore, quod fugiat deleniti ipsum quo natus nulla perspiciatis dolorem eos reiciendis!
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur voluptate suscipit praesentium consectetur modi delectus tempora fuga voluptatem inventore, quod fugiat deleniti ipsum quo natus nulla perspiciatis dolorem eos reiciendis!
+							Car tuning is modification of the performance or appearance of a vehicle. Most vehicles leave the factory set up for an average driver's expectations and normal conditions. Tuning, on the other hand, has become a way to personalize the characteristics of a vehicle to the owner's preference. Cars may be altered to provide better fuel economy, produce more power, or to provide better handling.                     
+							Cars have always been subject to after-market modification. The golden age of car tuning was the decades between World War II and the beginning of air pollution restrictions.Our Engineers decided to create revolution in automobile industry by changing it's trend.                                     
 						</div>
-						<button class="btn btn-warning btn-block">Read More</button>
+						<button class="btn btn-info btn-block">Read More</button>
 					</div>
 				</div>
 				<!-- Feature section ends here-->
 			</div>
 			<div class="row">
 				<div  id="moreTabs">
-					<div class="col-sm-6 textColor">
+					<div class="col-lg-6 textColor">
 						<h3>How we started</h3>
 						<div class="tabbable">
 							<ul class="nav nav-tabs">
@@ -253,65 +249,59 @@
 								<li>
 									<a href="#tab3" data-toggle="tab">Location</a>
 								</li>
-								<div class="tab-content">
+							</ul>
+							<div class="tab-content">
 									<div class="tab-pane active" id="tab1">
-										<p class="textAlign">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est itaque debitis, dolore ipsum sequi, recusandae architecto minus assumenda rerum vitae, porro, sint laboriosam repudiandae dolorem ut cum incidunt obcaecati omnis!
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error dolorem deleniti officia voluptatem cum molestias incidunt tempore, sint asperiores similique suscipit natus consequatur, rerum dolores non velit ducimus, id. Deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam sit officia doloremque asperiores esse perferendis qui voluptatibus quas facere quaerat repellendus, quo nemo sint at quisquam id voluptates soluta autem! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci error, autem natus dolorem quibusdam non ut molestiae, ipsa quod consequatur beatae, incidunt eos officia delectus nemo expedita nisi perferendis recusandae. Lorem ipsum dolor sit amet, consectetur adipisicing , illum harum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, eaque. Ex rerum temporibus error! Eveniet a suscipit, dignissimos reiciendis blanditiis cum dolorem facere fugit molestias, laborum sit. Nesciunt, aspernatur, similique. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae dolorem blanditiis neque iure nemo quas. Consequatur voluptates, nostrum repellendus molestiae eligendi laborum quam excepturi praesentium iure id saepe quibusdam tempora. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore perspiciatis aut nostrum alias vero sint, suscipit culpa ducimus</p>
-
+										<p class="textAlign">DC Design was founded in 1993 with the dual aim of redesigning and modifying mass market cars to create one-of-a-kind automotive beauties for automotive connoisseurs as well as offering design and prototyping services to the OEM automotive sector.
+										And a legend was born. DCD has produced more than 600 unique design cars; from supercars to a complete re-haul of the humble Ambassador. DCD has also provided design and prototyping services to the likes of Aston Martin, Renault and GM. Today DCD also designs and refurbishes aircraft interiors. DCD is now synonymous with bespoke luxury and avant-garde automotive design.Many cars were "hopped up" with engine modifications such as adding additional carburetors, high compression heads and dual exhausts. Engine swaps were done, the object of which was to put the most powerful engine in the lightest possible frame and body combination.With the change in automobile design to encase the wheels in fenders and to extend the hood to the full width of the car, the former practices were no longer possible. In addition, there was tremendous automotive advertising and subsequent public interest in the new models in the 1950s. Hence custom cars came into existence, swapping headlamp rings, grilles, bumpers, chrome side strips, and tail lights, as well as frenching and tunnelling head- and taillights. The bodies of the cars were changed by cutting through the sheet metal, removing bits to make the car lower, welding it back together, and adding a lot of lead to make the resulting form smooth (hence the term lead sled; </p>
 									</div>
 									<div class="tab-pane" id="tab2">
 										<h4>This is how we got motivation <small>Using Placehold.it</small></h4>
-										<img src="http://placehold.it/140" class = "thumbnail pull-left" alt="">
-										<p class="textAlign">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis a facere facilis dolore, quaerat mollitia doloremque doloribus quos necessitatibus rerum excepturi, iure eum tenetur, dolor molestiae deleniti officia debitis perferendis.
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora iste iusto possimus, placeat, culpa dolor. Quaerat facilis, distinctio minus ad. Doloribus illum quisquam obcaecati tempora amet nesciunt reiciendis aperiam est.
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis a facere facilis dolore, quaerat mollitia doloremque doloribus quos necessitatibus rerum excepturi, iure eum tenetur, dolor molestiae deleniti officia debitis perferendis.
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora iste iusto possimus, placeat, culpa dolor. Quaerat facilis, distinctio minus ad. Doloribus illum quisquam obcaecati tempora amet nesciunt reiciendis aperiam ests illum quisquam obcaecati tempora amet nesciunt reiciendis aperiam est..
-										obcaecati tempora amet nesciunt reiciendis aperiam est Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus molestias ab voluptates </p>
-									</div>
+										<img src="images/tabs/motivation.jpg" class = "thumbnail pull-left" alt="Image not Available">
+										<p class="textAlign">What motivates us is our own passion towards cars and we have a whole lot of best automobile engineers who are best and driven by their passion.They are true to their profession not to earn but provide the best service in market.
+										Car tuning is modification of the performance or appearance of a vehicle. Most vehicles leave the factory set up for an average driver's expectations and normal conditions. Tuning, on the other hand, has become a way to personalize the characteristics of a vehicle to the owner's preference. Cars may be altered to provide better fuel economy, produce more power, or to provide better handling.                     
+										Cars have always been subject to after-market modification. The golden age of car tuning was the decades between World War II and the beginning of air pollution restrictions.Our Engineers decided to create revolution in automobile industry by changing it's trend.With the change in automobile design to encase the wheels in fenders and to extend the hood to the full width of the car, the former practices were no longer possible. In addition, there was tremendous automotive advertising and subsequent public interest in the new models in the 1950s.
+										</p>
+									</div> 
 									<div class="tab-pane " id="tab3">
 										<h4><span class="glyphicon glyphicon-map-marker"></span>Our Location<small>More like our Favourite url</small></h4>
-											<div class="embed-responsive embed-responsive-16by9">
-
-											<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7780.128810129216!2d77.64900179999998!3d12.839114700000009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1476289212042"  frameborder="0" allowfullscreen></iframe>
-										</div>
-
+										<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7780.128810129216!2d77.64900179999998!3d12.839114700000009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1476289212042" class="embed-responsive embed-responsive-16by9" allowfullscreen></iframe>
 									</div>
 								</div>
-							</ul>
 						</div>
-						<!-- col-sm-6 ends here -->
+						<!-- col-lg-6 ends here -->
 					</div>
-					<div class="col-sm-6 textColor">
-						<h3>A List Group</h3>
+					<div class="col-lg-6 textColor">
+						<h3>Why Choose Us</h3>
 						<div class="list-group">
-							<h3>Why to choose us</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem voluptatum nemo hic qui atque in obcaecati totam. Est fugit sunt laborum, explicabo consequatur, fuga, sequi pariatur architecto minima veniam corrupti.</p>
+							<h3>we will give you the best of all three here</h3>
+							<p>We value our customers beacause we know that if a customer is coming to us with a hope to transform his car into something which he couldn't believe then we do give him best results by making sure all the three factors into consideration.</p>
 							<a href="" class="list-group-item">
 								<h4 class="list-group-item-heading">Quality</h4>
-								<p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere suscipit voluptatem incidunt eligendi sequi corporis odit quae illum. Cum harum soluta qui dolorum necessitatibus possimus, architecto impedit rerum non error.</p>
+								<p class="list-group-item-text">Quality is the main concern for any customer who is coming to us. Believe us we have the best quality analyst in the market who ensure that we are providing the best class of modification in the market.</p>
 							</a>
 							<a href="" class="list-group-item">
 								<h4 class="list-group-item-heading">Free Services</h4>
-								<p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere suscipit voluptatem incidunt eligendi sequi corporis odit quae illum. Cum harum soluta qui dolorum necessitatibus possimus, architecto impedit rerum non error.</p>
+								<p class="list-group-item-text">You know what we give free service for 1 year after modification as we do believe that you will never need a service about our modification as we do best quality check in the market to ensure your satisfaction</p>
 							</a>
 							<a href="" class="list-group-item">
 								<h4 class="list-group-item-heading">Best in field</h4>
-								<p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere suscipit voluptatem incidunt eligendi sequi corporis odit quae illum. Cum harum soluta qui dolorum necessitatibus possimus, architecto impedit rerum non error.</p>
+								<p class="list-group-item-text">We know and we believe we are best in field. You can search to web , go to best wutomotive experts and even you can check our ratings in world's best automotive magazines viz. Car and Drives.</p>
 							</a>
 						</div>
-						<!-- col-sm-6 ends here -->
+						<!-- col-lg-6 ends here -->
 					</div>
 					<!-- More Tabs ends here -->
 					</div>
 			</div>
 			<div class="row offers textColor">
-					<div class="col-sm-6">
+					<div class="col-lg-6">
 						<h3 class="">First purchase offer</h3>
 
 						<div class="thumbnails">
 							<div class="thumbnail">
-								<img src="images/offers/discount.png" alt="image Not Available"/>
-								<div class="label label-success price"><span class="glypicon glyphicon-tag"></span><sup>$</sup>40</div>
+								<img src="images/offers/discount.png" alt="image Not Available" class="imageColor" />
+								<div class="label label-success price"><span class="glyphicon glyphicon-tag"></span><sup>$</sup>40</div>
 								<div class="caption">
 									<button class="btn btn-primary">Click Here to avail</button>
 								</div>
@@ -319,14 +309,14 @@
 							</div>
 							<!-- thumbnails row ends here -->
 						</div>
-						<!-- col-sm-6 ends here -->
+						<!-- col-lg-6 ends here -->
 					</div>
-					<div class="col-sm-6">
-						<h3>Year subscription offer</h3>
+					<div class="col-lg-6">
+						<h3>Yearly subscription offer</h3>
 						<div class="thumbnails">
 							<div class="thumbnail">
-								<img src="images/offers/discount.png" alt="image Not Available"/>
-								<div class="label label-success price"><span class="glypicon glyphicon-tag"></span><sup>$</sup>40</div>
+								<img src="images/offers/discount.png" alt="image Not Available" class="imageColor"/>
+								<div class="label label-success price"><span class="glyphicon glyphicon-tag"></span><sup>$</sup>40</div>
 								<div class="caption">
 									<button class="btn btn-primary">Click Here to avail</button>
 								</div>
@@ -334,9 +324,9 @@
 							</div>
 							<!-- thumbnails row ends here -->
 						</div>
-						<!-- col-sm-6 ends here -->
+						<!-- col-lg-6 ends here -->
 					</div>
-					<!-- col-sm-12 ends here -->
+					<!-- col-lg-12 ends here -->
 				<!-- row ends here -->
 			</div>
 		</div>
@@ -345,14 +335,15 @@
 <footer>
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-2">
+			<div class="col-lg-2">
 				<h6>copyright &copy; 2016 dyc.stackroute.in</h6>
 			</div>
-			<div class="col-sm-4">
+			<div class="col-lg-4">
 				<h6>About us</h6>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi nostrum a magni veniam officia, adipisci quis delectus, cumque, possimus aliquid dolorum itaque eum aliquam! Natus, libero. Ab hic excepturi suscipit.</p>
+				<p>International team of car and design enthusiasts is proud to present you dyc.com, the first free resource entirely dedicated to car modification.
+				Whether you are searching for a specific modification option for your car or just want to play around with the car of your dream, dyc.com is the web site for you.</p>
 			</div>
-			<div class="col-sm-2">
+			<div class="col-lg-2">
 				<h6>Navigation</h6>
 				<ul class="unstyled">
 					<li><a href="">disclaimer</a></li>
@@ -360,7 +351,7 @@
 					<li><a href="">terms</a></li>
 				</ul>
 			</div>
-			<div class="col-sm-2">
+			<div class="col-lg-2">
 				<h6>Follow Us</h6>
 				<ul class="unstyled">
 					<li><a href="">Twitter</a></li>
@@ -368,7 +359,7 @@
 					<li><a href="">Google Plus</a></li>
 				</ul>
 			</div>
-			<div class="col-sm-2">
+			<div class="col-lg-2">
 				Visit our centers
 			</div>
 			<!-- rows ends here -->
@@ -379,6 +370,6 @@
 </footer>
 </body>
 </html>
-	<!-- <div class="col-sm-12">
+	<!-- <div class="col-lg-12">
 				<ul class="list-inline list-unstyled"><li>&nbsp;<a href="http://www.facebook.com/webvanta" target="_blank" class="external"><img src="https://assets-production-webvanta-com.s3-us-west-2.amazonaws.com/000000/49/06/original/images-template/social-facebook.png" class="footer-icon" alt="Webvanta On Facebook"></a>&nbsp;<br>&nbsp;<img src="https://assets-production-webvanta-com.s3-us-west-2.amazonaws.com/000000/49/06/original/images-template/social-facebook-shadow.png" class="footer-icon-shadow" alt="Facebook Shadow">&nbsp; </li><li>&nbsp;<a href="http://twitter.com/webvanta" target="_blank" class="external"><img src="https://assets-production-webvanta-com.s3-us-west-2.amazonaws.com/000000/49/06/original/images-template/social-twitter.png" class="footer-icon" alt="Follow Webvanta on Twitter"></a>&nbsp;<br>&nbsp;<img src="https://assets-production-webvanta-com.s3-us-west-2.amazonaws.com/000000/49/06/original/images-template/social-twitter-shadow.png" class="footer-icon-shadow" alt="Twitter Shadow">&nbsp; </li><li>&nbsp;<a href="https://plus.google.com/+Webvanta1" class="external" target="_blank"><img src="https://assets-production-webvanta-com.s3-us-west-2.amazonaws.com/000000/49/06/original/images-template/social-google.png" class="footer-icon" alt="Plus One Webvanta on Google+"></a>&nbsp;<br>&nbsp;<img src="https://assets-production-webvanta-com.s3-us-west-2.amazonaws.com/000000/49/06/original/images-template/social-google-shadow.png" class="footer-icon-shadow" alt="Google+ shadow">&nbsp; </li><li>&nbsp;<a href="http://www.linkedin.com/company/webvanta-inc-" class="external" target="_blank"><img src="https://assets-production-webvanta-com.s3-us-west-2.amazonaws.com/000000/49/06/original/images-template/social-linkedin.png" class="footer-icon" alt="Find Webvanta on Linkedin"></a>&nbsp;<br>&nbsp;<img src="https://assets-production-webvanta-com.s3-us-west-2.amazonaws.com/000000/49/06/original/images-template/social-linkedin-shadow.png" class="footer-icon-shadow" alt="Linkedin shadow">&nbsp; </li><li>&nbsp;<a href="http://www.youtube.com/user/webvanta" class="external" target="_blank"><img src="https://assets-production-webvanta-com.s3-us-west-2.amazonaws.com/000000/49/06/original/images-template/social-youtube.png" class="footer-icon" alt="Webvanta on Youbtube"></a>&nbsp;<br>&nbsp;<img src="https://assets-production-webvanta-com.s3-us-west-2.amazonaws.com/000000/49/06/original/images-template/social-youtube-shadow.png" class="footer-icon-shadow" alt="Youtube shadow">&nbsp; </li></ul>
 			</div> -->
